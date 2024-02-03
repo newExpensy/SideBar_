@@ -1,0 +1,115 @@
+/* --- Variable setup --- */
+:root {
+    --c-background: #000;
+    --c-font: #000;
+    --c-backgroundHover: lightskyblue;
+    --c-fontHover: #fff;
+}
+
+
+/* --- Global --- */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+/* --- Body --- */
+.container_ {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    background: linear-gradient(#0081f1, #c3f2ff);
+    color: var(--c-font);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    /* background-color: aqua; */
+}
+
+.top-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 15px 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.logo {
+    /* display: flex; */
+    font-size: 50px;
+    /* font-weight: 700; */
+}
+
+.bar {
+    display: flex;
+    font-size: 35px;
+    /* font-weight: 700; */
+    /* margin-left: 0px; */
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 15px;
+    /* margin: 5px 0px; */
+    color: var(--c-font);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.link-icon {
+    display: flex;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.link-text {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/* --- Animation --- */
+.link:hover {
+    background-color: var(--c-backgroundHover);
+    color: var(--c-fontHover);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+
+/* --- Active --- */
+.active {
+    background: var(--c-backgroundHover);
+    color: var(--c-fontHover);
+}
