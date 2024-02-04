@@ -16,11 +16,18 @@
 
 /* --- Body --- */
 .container_ {
+    /* position: fixed; */
+    /* height: 100vh; */
     display: flex;
     flex-direction: row;
 }
 
 .side-bar {
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     /* padding: 10px; */
@@ -34,6 +41,7 @@
 }
 
 main {
+    margin-left: 250px;
     width: 100%;
     padding: 20px;
     /* background-color: aqua; */

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
+// import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 import '../Style/SideBar.css';
@@ -115,7 +115,7 @@ const SideBar = ({ children }) => {
                     }
                 </div>
             </div>
-            <main>{children}</main>
+            <main style={{marginLeft: isOpen ? "250px" : "50px"}}>{children}</main>
         </div>
     );
 }
