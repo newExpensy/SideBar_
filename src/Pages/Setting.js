@@ -52,23 +52,30 @@ const Setting = ({children}) => {
     ]
 
     return(
-        <div className='container setting-container w-100'>
-            <div className='row setting-top-bar'>
-                <div className='col w-100'>
-                    <h1 className='top-bar-title w-100'>Setting</h1>
-                    <div style={{flexDirection: isOpen ? "row" : "column", alignItems: isOpen ? "center" : "center"}} className='top-bar-items col-12 w-100'>
-                        {
-                            menuItems.map((item,index) => (
-                                <NavLink to={item.path} key={index} style={{width: isOpen ? "100%" : "100%"}} className='link_' activeclassName='active'>
-                                    <div className='link_-text'>{item.name}</div>                                                                                              
-                                </NavLink>
-                            ))
-                        }
+        <section className='h-100 w-100'>
+            <div className='container setting-container w-100'>
+                <div className='row'>
+                    <div className='col top-section-main py-3'>
+                        <h1 className='top-section-main-title px-3'>Setting</h1>
                     </div>
                 </div>
+                <div className='row setting-top-bar'>
+                    <div className='col w-100'>
+                        <h1 className='top-bar-title w-100'>Setting</h1>
+                        <div style={{flexDirection: isOpen ? "row" : "column", alignItems: isOpen ? "center" : "center"}} className='top-bar-items col-12 w-100'>
+                            {
+                                menuItems.map((item,index) => (
+                                    <NavLink to={item.path} key={index} style={{width: isOpen ? "100%" : "100%"}} className='setting-link' activeclassName='active_'>
+                                        <div className='link_-text'>{item.name}</div>                                                                                              
+                                    </NavLink>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+                <Outlet />
             </div>
-            <Outlet />
-        </div>
+        </section>
     );
 }
 

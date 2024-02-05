@@ -1,9 +1,11 @@
 /* --- Variable setup --- */
 :root {
-    --c-background: #000;
-    --c-font: #000;
-    --c-backgroundHover: lightskyblue;
+    --c-backgroundSideBar: #000000;
+    --c-fontSideBar: #76847e;
+    --c-backgroundHoverSideBar: #03d47c;
     --c-fontHover: #fff;
+    --c-activeBackgroundSideBar : #03d47c;
+    --c-backgroundMain: #FCFBF9;
 }
 
 
@@ -31,8 +33,9 @@
     display: flex;
     flex-direction: column;
     /* padding: 10px; */
-    background: linear-gradient(#0081f1, #c3f2ff);
-    color: var(--c-font);
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
+    background-color: var(--c-backgroundSideBar);
+    color: var(--c-fontSideBar);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -41,9 +44,11 @@
 }
 
 main {
+    /* z-index: 1; */
     margin-left: 250px;
     width: 100%;
     padding: 20px;
+    background: var(--c-backgroundMain);
     /* background-color: aqua; */
 }
 
@@ -82,7 +87,7 @@ main {
     align-items: center;
     padding: 12px 15px;
     /* margin: 5px 0px; */
-    color: var(--c-font);
+    color: var(--c-fontSideBar);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -106,7 +111,7 @@ main {
 
 /* --- Animation --- */
 .link:hover {
-    background-color: var(--c-backgroundHover);
+    background-color: var(--c-backgroundHoverSideBar);
     color: var(--c-fontHover);
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -118,6 +123,6 @@ main {
 
 /* --- Active --- */
 .active {
-    background: var(--c-backgroundHover);
+    background: var(--c-backgroundHoverSideBar);
     color: var(--c-fontHover);
 }

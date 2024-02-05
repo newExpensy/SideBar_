@@ -27,7 +27,7 @@ const SideBar = ({ children }) => {
     const [isOpen, setIsOpen] = useState(true); // Sidebar is initially open
 
     // Function to toggle sidebar
-    const toggle = () => setIsOpen(!isOpen);
+    // const toggle = () => setIsOpen(!isOpen);
 
     // Effect to listen for window width changes and close sidebar if width is less than a threshold
     useEffect(() => {
@@ -97,7 +97,7 @@ const SideBar = ({ children }) => {
 
     return (
         <div className='container_'>
-            <div style={{ width: isOpen ? "250px" : "50px" }} className='side-bar'>
+            <div style={{ width: isOpen ? "250px" : "50px", transition: isOpen ? "0.1s" : "0.1s"}} className='side-bar'>
                 <div style={{ marginTop: isOpen ? "0px" : "60px" }} className='top-section'>
                     <h1 style={{ display: isOpen ? "block" : "none" }} className='logo'>Logo</h1>
                     {/* <div style={{ marginLeft: isOpen ? "40px" : "-10px" }} className='bar'>

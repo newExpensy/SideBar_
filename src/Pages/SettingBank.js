@@ -37,7 +37,7 @@ function SettingBank(){
                 </div>
             </div>
             <div className='row'>
-                <div className='col card setting-bank-body w-100'>
+                <div className='col card rounded-3 setting-bank-body w-100'>
                     <div className='row'>
                         <div className='col setting-bank-body-icon w-100'>
                             <RiUserSettingsFill />

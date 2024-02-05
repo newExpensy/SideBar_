@@ -1,9 +1,11 @@
-/* --- Variables --- */
+/* --- Variable setup --- */
 :root {
-    --c-background: #000;
-    --c-font: #000;
-    --c-backgroundHover: lightskyblue;
+    --c-backgroundSideBar: #000000;
+    --c-fontSideBar: #76847e;
+    --c-backgroundHoverSideBar: #03d47c;
     --c-fontHover: #fff;
+    --c-activeBackgroundSideBar: #03d47c;
+    --c-settingBankIcon: #000000;
 }
 
 
@@ -20,7 +22,7 @@
 }
 
 .setting-bank-body {
-    background: linear-gradient(#0081f1, #c3f2ff);
+    /* background: linear-gradient(#0081f1, #c3f2ff); */
     padding: 10px 30px;
     margin: 10px 60px;
     border: none;
@@ -52,7 +54,7 @@
     font-size: 25px;
     font-weight: 600;
     background-color: transparent;
-    color: var(--c-font);
+    color: var(--c-settingBankIcon);
     transition: transform 0.3s;
     -webkit-transition: transform 0.3s;
     -moz-transition: transform 0.3s;
